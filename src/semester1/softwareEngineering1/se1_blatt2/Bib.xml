@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Bib SYSTEM "Bib.dtd">
+
+<Bib>
+	<Buch ISBN='3836226200'>
+		<Titel>Einstieg in XML</Titel>
+		<Autor>
+			<Vorname>Helmut</Vorname>
+			<Nachname>Vonhoegen</Nachname>
+		</Autor>
+		<Verlag>Galileo Computing</Verlag>
+	</Buch>
+	<Buch ISBN='3446440739'>
+		<Titel>Grundkurs Programmieren in Java</Titel>
+		<Autor>
+			<Vorname>Dietmar</Vorname>
+			<Nachname>Ratz</Nachname>
+			<Organisation>DHBW</Organisation>
+		</Autor>
+		<Autor>
+			<Vorname>Jens</Vorname>
+			<Nachname>Scheffler</Nachname>
+		</Autor>
+		<Autor>
+			<Vorname>Delef</Vorname>
+			<Nachname>Seese</Nachname>
+		</Autor>
+		<Autor>
+			<Vorname>Jan</Vorname>
+			<Nachname>Wiesenberger</Nachname>
+		</Autor>
+		<Verlag>Carl Hanser Verlag</Verlag>
+	</Buch>
+</Bib>

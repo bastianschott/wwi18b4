@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #cccccc;
+	font-family:verdana;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: green;
+}
+
+p,ul {
+	margin: 10px;
+	border-color: green;
+	border-width: 5px;
+	border-style: solid;
+	padding: 20px;
+}

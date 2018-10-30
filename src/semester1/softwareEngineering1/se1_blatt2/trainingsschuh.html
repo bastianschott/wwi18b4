@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Trainingsschuh</title>
+<style type="text/css">
+ 	body {
+ 		font-family: verdana;
+ 	}
+ 	
+ 	#schuh {
+		border: none;
+		padding: 0.8em;
+		float:left;
+		width: 50%;
+		height: auto;
+	} 
+	h1 {
+		color: red;
+		font-style:italic;
+	}
+	h3 {
+		color: blue;
+		font-style:italic;
+	}
+	input, select {
+		border-color: gray;
+		border-width: 5px;
+		border-style: solid;
+		background-color: yellow;
+		font-color: blue;
+	}
+	ul {
+		font-family: arial;
+	}
+	#submit {
+		border-color: blue;
+		border-width: 2px;
+		border-style: solid;
+		background-color: lightblue;
+		font-color: blue;
+	}
+</style>
+
+</head>
+<body>
+	<h1>Trainingsschuh</h1>
+	
+	<hr>
+	
+	<table>
+		<tr>
+			<td width=30%><img alt="Trainingsschuh" src="img/schuh.jpg" id=schuh></td>
+			<td>
+				<b>Artikelnummer: 89732172</b>
+				<ul>
+					<li>Trainingsschuh</li>
+					<li>Obermaterial aus Textil (Mesh)</li>
+					<li>Atmungsaktiv</li>
+					<li>Profilierte Gummilaufsohle</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	
+	<hr>
+	
+	<h3>Bitte geben Sie Ihre Bestelldaten ein:</h3>
+
+	<form action="mailto:name@domain.tld" method="post"><table>
+		<tr>
+			<td>Anzahl:</td>
+			<td><input type="text" name="anzahl" value="1" size="3"></td>
+		</tr>
+		<tr>
+			<td>Farbe:</td>
+			<td>schwarz-lila</td>
+		</tr>
+		<tr>
+			<td>Schuhgröße:</td>
+			<td><select name="groesse" size=7>
+			<option value="36">36</option>
+			<option value="37">37</option>
+			<option value="38" selected>38</option>
+			<option value="39">39</option>
+			<option value="40">40</option>
+			<option value="41">41</option>
+			<option value="42">42</option>
+		</select></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Bestellen" id=submit></td>
+		</tr>
+	</table></form>
+	
+</body>
+</html>

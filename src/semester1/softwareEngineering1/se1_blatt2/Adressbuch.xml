@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Adressbuch [
+	<!ELEMENT Adressbuch (Bezeichnung, Adresse+)>
+	<!ELEMENT Bezeichnung (#PCDATA)>
+	<!ELEMENT Adresse (Vorname, Nachname, (EMail | Telefon)+, Notiz?)>
+	<!ATTLIST Adresse AdresseID ID #REQUIRED>
+	<!ELEMENT Vorname (#PCDATA)>
+	<!ELEMENT Nachname (#PCDATA)>
+	<!ELEMENT EMail (#PCDATA)>
+	<!ELEMENT Telefon (#PCDATA)>
+	<!ELEMENT Notiz (#PCDATA)>
+]>
+<Adressbuch>
+	<Bezeichnung><![CDATA[Mein erstes <XML>-Adressbuch]]></Bezeichnung>
+	<Adresse AdresseID="A1">
+		<Vorname>Max</Vorname>
+		<Nachname>Müller</Nachname>
+		<EMail>max@mueller.de</EMail>
+		<Telefon>0721 6669888</Telefon>
+		<Notiz>Mein bester Freund</Notiz>
+	</Adresse>
+
+	<Adresse AdresseID="A2">
+		<Vorname>Martina</Vorname>
+		<Nachname>Kramer,</Nachname>
+		<EMail>martina@kramer.de</EMail>
+		<Telefon>+34309229922</Telefon>
+		<Notiz>Freundin meines Bruder</Notiz>
+	</Adresse>
+</Adressbuch>
