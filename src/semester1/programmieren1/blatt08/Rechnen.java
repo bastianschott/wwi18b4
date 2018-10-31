@@ -1,4 +1,4 @@
-package semester1.programmieren1.blatt8;
+package semester1.programmieren1.blatt08;
 
 public class Rechnen {
 	public int ggt(int a, int b) {
