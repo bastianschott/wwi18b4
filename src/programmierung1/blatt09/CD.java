@@ -1,5 +1,7 @@
 package programmierung1.blatt09;
 
+import Prog1Tools.IOTools;
+
 public class CD {
 	private String titel;
 	private int spieldauer;
@@ -22,9 +24,9 @@ public class CD {
 	}
 	
 	public static void einlesen(CD[] cdf) {
-		CD[] cd = cdf;
 		for (int i=0; i<cdf.length; i++) {
-			//CD cd + i = new CD();
+			System.out.println(i+1 + ". CD");
+			cdf[i] = new CD(IOTools.readString("Titel: "), IOTools.readInt("Spieldauer: "), IOTools.readBoolean("Ausgeliehen: "));
 		}
 	}
 	

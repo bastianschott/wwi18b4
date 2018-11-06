@@ -7,12 +7,15 @@ public class Party {
 	public static void main(String[] args) {
 		int anzahl = IOTools.readInt("Geben Sie die Anzahl an einzugebender CDs ein: ");
 		CD[] cd = new CD[anzahl];
-		for (int i=0; i<cd.length; i++) {
-			String titel = IOTools.readString("Titel: ");
-			int spieldauer = IOTools.readInt("Spieldauer: ");
-			boolean ausgeliehen = IOTools.readBoolean("Ausgeliehen:");
-			cd[i] = new CD(titel, spieldauer, ausgeliehen);
-		}
+		CD.einlesen(cd);
+		CD.sortieren(cd);
+		CD.vorhandeneAusgeben(cd);
+//		for (int i=0; i<cd.length; i++) {
+//			String titel = IOTools.readString("Titel: ");
+//			int spieldauer = IOTools.readInt("Spieldauer: ");
+//			boolean ausgeliehen = IOTools.readBoolean("Ausgeliehen:");
+//			cd[i] = new CD(titel, spieldauer, ausgeliehen);
+//		}
 	}
 	
 //	public static void main(String[] args) {
