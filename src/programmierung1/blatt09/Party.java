@@ -10,7 +10,12 @@ public class Party {
 		CD.einlesen(cd);
 		CD.sortieren(cd);
 		CD.vorhandeneAusgeben(cd);
-//		for (int i=0; i<cd.length; i++) {
+
+		
+		
+		
+		
+		//		for (int i=0; i<cd.length; i++) {
 //			String titel = IOTools.readString("Titel: ");
 //			int spieldauer = IOTools.readInt("Spieldauer: ");
 //			boolean ausgeliehen = IOTools.readBoolean("Ausgeliehen:");
