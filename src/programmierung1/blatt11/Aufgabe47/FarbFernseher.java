@@ -8,6 +8,7 @@ public class FarbFernseher extends Fernseher {
 		this.farbe = Math.max(0, Math.min(farbe, 50));
 	}
 	
+	@Override
 	public void change(String einstell, int wert) {
 		farbe = einstell.equals("color") ? farbe+wert : farbe;
 		super.change(einstell, wert);
