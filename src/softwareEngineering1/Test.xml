@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Test [
+	<!ELEMENT MODell (Liste+)>
+	<!ELEMENT HerstelleresAutos (#PCDATA)>
+	<!ELEMENT Jahr_des_Bauens (#PCDATA)>
+	<!ELEMENT Bemerkungen_12neu (#PCDATA)>
+	<!ELEMENT Hallo (#PCDATA)> 
+	<!ELEMENT TimStruppi (#PCDATA)>
+	<!ELEMENT xml-thema (#PCDATA)>
+	<!ELEMENT buch (#PCDATA)>
+	<!ATTLIST buch titel CDATA #IMPLIED xml-thema CDATA #IMPLIED>
+]>
+
+<Test>
+
+<student matrikel-nummer="123456"></student>
+<student matrikel-nummer="123456"></student>
+<student matrikel-nummer="123456"
+studiengang="Informatik"></student>
+<dhbw standort="Karlsruhe"></dhbw>
+<buch titel=''></buch>
+<buch titel="XML"></buch>
+<xml-buch xml-thema=''></xml-buch>
+
+
+	
+</Test>

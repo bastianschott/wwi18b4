@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!DOCTYPE Adressbuch [
+	<!ELEMENT Adressbuch (Bezeichnung?, Datensatz+)>
+	<!ELEMENT Bezeichnung (#PCDATA)>
+	<!ELEMENT Datensatz (Name, Vorname, Telefon, Email, Notiz+)>
+	<!ATTLIST Datensatz DatensatzID ID #REQUIRED>
+	<!ELEMENT Name (#PCDATA)>
+	<!ELEMENT Vorname (#PCDATA)>
+	<!ELEMENT Email (#PCDATA)>
+	<!ELEMENT Telefon (#PCDATA)>
+	<!ATTLIST Telefon 
+		land CDATA #IMPLIED 
+		vorwahl CDATA #REQUIRED>
+	<!ELEMENT Notiz (#PCDATA)>
+	<!ENTITY at "@">
+	<!ENTITY ue "ü">
+	
+]>
+
+<Adressbuch>
+	<Bezeichnung>Mein erstes <![CDATA[<XML>]]>-Adressbuch</Bezeichnung>
+	<Datensatz DatensatzID="A1">
+		<Name>M&ue;ller</Name>
+		<Vorname>Max</Vorname>
+		<Telefon vorwahl='0721'> 6669888</Telefon>
+		<Email>max&at;mueller.de</Email>
+		<Notiz>Mein bester Freund</Notiz>
+	</Datensatz>
+	
+	<Datensatz DatensatzID="A2">
+		<Name>Kramer</Name>
+		<Vorname>Martina</Vorname>
+		<Telefon land="+34" vorwahl="309"> 229922</Telefon>
+		<Email>martina@kramer.de</Email>
+		<Notiz>Freundin meines Bruders</Notiz>
+	</Datensatz>
+</Adressbuch>

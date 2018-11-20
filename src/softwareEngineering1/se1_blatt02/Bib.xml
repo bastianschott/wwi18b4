@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE Bib SYSTEM "Bib.dtd">
+<!--<!DOCTYPE Bib SYSTEM "Bib.dtd">-->
+<!DOCTYPE Bib [
+	<!ELEMENT Bib (Buch)*>
+	<!ELEMENT Buch (Titel, Autor+, Verlag)>
+	<!ATTLIST Buch ISBN CDATA #REQUIRED>
+	<!ELEMENT Titel (#PCDATA)>
+	<!ELEMENT Autor (Vorname, Nachname, Organisation?)>
+	<!ELEMENT Vorname (#PCDATA)>
+	<!ELEMENT Nachname (#PCDATA)>
+	<!ELEMENT Organisation (#PCDATA)>
+	<!ELEMENT Verlag (#PCDATA)>
+	<!ENTITY und "&amp;">
+]>
 
 <Bib>
 	<Buch ISBN='3836226200'>

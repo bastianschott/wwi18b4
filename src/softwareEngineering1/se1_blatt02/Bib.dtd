@@ -9,3 +9,4 @@
 <!ELEMENT Nachname (#PCDATA)>
 <!ELEMENT Organisation (#PCDATA)>
 <!ELEMENT Verlag (#PCDATA)>
+<!ENTITY und "<![CDATA[&]]>">
