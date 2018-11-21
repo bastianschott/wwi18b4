@@ -1,4 +1,4 @@
-package programmierung1.blatt12.Aufgabe48.AlsInterface;
+package programmierung1.blatt12.Aufgabe48.Aufgabe49;
 
 public class Schilder {
 	public static void beschriften(Nummerierer n) {

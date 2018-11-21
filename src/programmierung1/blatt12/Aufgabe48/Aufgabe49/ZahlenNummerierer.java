@@ -1,4 +1,4 @@
-package programmierung1.blatt12.Aufgabe48.AlsInterface;
+package programmierung1.blatt12.Aufgabe48.Aufgabe49;
 
 public class ZahlenNummerierer implements Nummerierer {
 	private static int i = 1;
