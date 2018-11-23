@@ -6,7 +6,7 @@ public class CD extends Medium implements Beschreibbar {
 	private String titel;
 
 	@Override
-	protected int getPreis() {
+	protected double getPreis() {
 		// TODO Auto-generated method stub
 		return preis;
 	}

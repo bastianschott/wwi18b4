@@ -13,6 +13,22 @@ public class Bruch {
 		this.zaehler = zaehler;
 		this.nenner = nenner;
 	}
+	
+	public int getZaehler() {
+		return zaehler;
+	}
+	
+	public int getNenner() {
+		return nenner;
+	}
+	
+	public void setZaehler(int zaehler) {
+		this.zaehler = zaehler;
+	}
+	
+	public void setNenner(int nenner) {
+		this.nenner = nenner;
+	}
 
 	public void einlesen() {
 		this.zaehler = IOTools.readInt("Zaehler = ");
@@ -21,7 +37,7 @@ public class Bruch {
 
 	public Bruch mul(Bruch b) {
 		Bruch neu = new Bruch();
-		neu.zaehler = this.zaehler * b.nenner;
+	neu.zaehler = this.zaehler * b.zaehler;
 		neu.nenner = this.nenner * b.nenner;
 		return neu;
 	}
