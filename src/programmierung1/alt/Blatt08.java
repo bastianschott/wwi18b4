@@ -5,7 +5,7 @@ import Prog1Tools.IOTools;
 public class Blatt08 {
 	//private static double summe = 0;
 	public static void main(String[] args) {
-		Aufgabe31();
+		System.out.println(quersumme2(163));
 		
 		
 	}
