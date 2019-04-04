@@ -29,13 +29,17 @@ public class Aufgabe07<E> {
 	public String toString() {
 		return Arrays.toString(content);
 	}
-	
+
 	public String toString2() {
+		int index = firstIndex;
 		String s = "(";
-		for(int i = firstIndex; i < size; i++) {
+		for (int i = 1; i < size; i++) {
 			
+			s+=content[index]+", ";
+			index++;
+			index = index == content.length ? 0 : index;
 		}
-		return s + ")";
+		return s + content[index]+")";
 	}
 
 	public static void main(String[] args) {
@@ -50,6 +54,7 @@ public class Aufgabe07<E> {
 		list.insert(4);
 		list.remove();
 		list.remove();
+
 		list.insert(20);
 
 		System.out.println(list.toString());
