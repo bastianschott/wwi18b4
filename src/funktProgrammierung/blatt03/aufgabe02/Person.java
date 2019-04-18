@@ -1,3 +1,5 @@
+package funktProgrammierung.blatt03.aufgabe02;
+
 public class Person {
   int nr;
   String vorname;
