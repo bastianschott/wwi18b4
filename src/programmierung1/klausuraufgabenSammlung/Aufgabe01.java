@@ -1,7 +1,9 @@
 package programmierung1.klausuraufgabenSammlung;
 
 public class Aufgabe01 {
-	
+	public static void main(String[] args) {
+		root(9,3);
+	}
 	public static double root(double a, int n) {
 		double xK = Math.sqrt(a), xKminus1 = Math.sqrt(a);
 
