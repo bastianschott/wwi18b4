@@ -17,6 +17,6 @@ public class Aufgabe02 {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(newton(6, 0.00001));
+		System.out.println(newton(2, 3));
 	}
 }
