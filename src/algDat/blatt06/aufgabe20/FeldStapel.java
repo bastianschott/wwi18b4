@@ -4,6 +4,7 @@ public class FeldStapel implements Stapel<Wert> {
 	Wert[] inhalte;
 	int lastIndex;
 
+	
 	public FeldStapel(int length) {
 		inhalte = new Wert[length];
 		lastIndex = -1;
