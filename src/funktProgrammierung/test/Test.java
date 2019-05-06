@@ -1,21 +1,38 @@
 package funktProgrammierung.test;
 
+import java.util.*;
+
 public class Test {
-    private static void test(){
-        boolean b = true;
-        int i = 0;
+	int i;
 
-        if(b){
-            i = 1;
-        } else{
-            i = 2;
-        }
+	Test(int i) {
+		this.i = i;
+	}
 
+	boolean istGerade() {
+		return i%2==0;
+	}
+	
+	int getI() {
+		return ++i;
+	}
+	
+	static void go() {
+		
+	}
+	
+	@Override
+	public String toString() {
+		return i+"";
+	}
 
-        i = b ? 1 : 2;
-    }
-
-    public static void main(String[] args){
-        System.out.println("lol");
-    }
+	public static void main(String[] args) {
+		List<Test> test = new ArrayList<>();
+		for (int i = 0; i < 10; i++) {
+			test.add(new Test((int) (Math.random() * 100)));
+		}
+		Runnable r = () -> go();
+		test.stream().filter(Test::istGerade).map(Test::getI).forEach(System.out::println);;;
+		
+	}
 }
