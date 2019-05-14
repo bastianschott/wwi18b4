@@ -72,7 +72,7 @@ public class CellGrid extends Container {
 						cells[row][col].numberNeighborBombs++;
 
 						// TODO: DEBUG
-						cells[row][col].setText(cells[row][col].numberNeighborBombs + "");
+						// cells[row][col].setText(cells[row][col].numberNeighborBombs + "");
 					}
 				}
 			}
