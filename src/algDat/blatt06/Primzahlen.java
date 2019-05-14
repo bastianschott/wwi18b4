@@ -37,7 +37,7 @@ public class Primzahlen {
 			System.out.print(it.next()+", ");
 			if (i % 10 == 0)
 				System.out.print("\n");
-
+			// FIXME: 
 		}
 	}
 }
