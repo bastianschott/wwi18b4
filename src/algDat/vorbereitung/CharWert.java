@@ -17,7 +17,7 @@ public class CharWert extends Wert {
 	public Wert mul(Wert w) { // Multiplikations-Methode
 		CharWert cw = (CharWert) w;
 		return new CharWert((char) (z * cw.z));
-	}
+	} 
 
 	public String toString() { // String Darstellung
 		return z + "";
