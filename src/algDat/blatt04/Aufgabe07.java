@@ -10,6 +10,7 @@ public class Aufgabe07<E> {
 		content = (E[]) new Object[length];
 		this.size = 0;
 	}
+	
 
 	public void insert(E newEntry) {
 		if (size == content.length)
